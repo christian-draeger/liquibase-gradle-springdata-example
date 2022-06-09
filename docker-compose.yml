@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  database:
+    image: postgres:12.4-alpine
+    environment:
+      - POSTGRES_USER=liquibase-demo
+      - POSTGRES_PASSWORD=liquibase-demo
+      - POSTGRES_DB=liquibase-demo
+    ports:
+      - "5432:5432"
+
+networks:
+  default:
+    name: local_development_network

@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/liquibase-demo
+    driver-class-name: org.postgresql.Driver
+    username: liquibase-demo
+    password: liquibase-demo
+  jpa:
+    hibernate.ddl-auto: create
+
+

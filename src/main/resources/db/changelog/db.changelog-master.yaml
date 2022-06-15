@@ -1,0 +1,33 @@
+databaseChangeLog:
+- changeSet:
+    id: 1655016512863-1
+    author: christiandrager (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: example_pkey
+            name: id
+            type: VARCHAR(255)
+        - column:
+            constraints:
+              nullable: false
+            name: age
+            type: INTEGER
+        - column:
+            constraints:
+              nullable: false
+            name: name
+            type: VARCHAR(255)
+        tableName: example
+- changeSet:
+    id: 1655016512863-2
+    author: christiandrager (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: name
+        constraintName: uk_f6gr82fol6okaythd8vbtrf8
+        tableName: example

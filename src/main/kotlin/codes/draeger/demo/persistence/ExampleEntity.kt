@@ -1,5 +1,6 @@
 package codes.draeger.demo.persistence
 
+import org.springframework.data.jpa.repository.JpaRepository
 import java.util.UUID
 import javax.persistence.Column
 import javax.persistence.Entity
@@ -17,4 +18,8 @@ class ExampleEntity(
 
     @Column(name = "age", nullable = false)
     val age: Int,
+
+
 )
+
+interface ExampleRepository: JpaRepository<ExampleEntity, String>

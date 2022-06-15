@@ -5,6 +5,8 @@ spring:
     username: liquibase-demo
     password: liquibase-demo
   jpa:
-    hibernate.ddl-auto: create
+    hibernate.ddl-auto: validate
+  liquibase:
+    enabled: true
 
 
